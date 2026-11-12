@@ -18,4 +18,4 @@ How it is wired: the Pages build replaces the server actions in `src/actions/` w
 
 Unchanged: `npm run dev` / `npm run build` use the server actions in `src/actions/` with the Firebase Admin SDK and Firestore.
 
-This needs the service account key at `src/service-account-key.json` and the web config in `.env.local` (see `src/.env.local.example`). **Neither file is in this repository and they must never be committed** - both are in `.gitignore`.
+This needs the service account key at `src/service-account-key.json` and the Firebase web config in `.env.local` (the `NEXT_PUBLIC_FIREBASE_*` variables listed in `src/lib/firebase.ts`). **Neither file is in this repository and they must never be committed** - both are in `.gitignore`.
